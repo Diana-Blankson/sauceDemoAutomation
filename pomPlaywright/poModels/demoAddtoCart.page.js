@@ -5,7 +5,6 @@ exports.demoAddtoCartPage = class demoAddtoCartPage{
     constructor(page){
         this.page = page;
 
-
         this.firstItem = page.locator('#add-to-cart-sauce-labs-backpack')
         this.secondItem = page.locator('#add-to-cart-sauce-labs-bolt-t-shirt')
         this.thirdItem = page.locator('#add-to-cart-sauce-labs-onesie')

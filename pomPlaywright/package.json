@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"test: e2e": "playwright test"},
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",

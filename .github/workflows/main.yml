@@ -1,22 +1,19 @@
-name: Playwright
+name: Run Playwright Tests
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 12 * * 5' # Run at 12:00 PM UTC on Fridays
+  push:
+  schedule:
+    - cron: "0 0 * * 5"
 
 jobs:
-  test:
-    runs-on: ubuntu-latest    
-
+  test:
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2    
+    - name: Checkout code
+      uses: actions/checkout@v2
 
     - name: Install dependencies
-      run: npm install
+      run: npm install
 
-    - name: Run Playwright
-      run: npm test
+    - name: Run tests with Playwright
+      run: npm test

@@ -45,7 +45,7 @@ exports.demoCheckoutPage = class demoCheckoutPage{
      async completeOrder(){
         await this.continue.click()
         await expect(this.page).toHaveURL(/.*checkout-step-two/)
-        await expect(this.shipInfo).toHaveText('FREE PONY EXPRESS DELIVERY!')
+        await expect(this.shipInfo).toHaveText('Free Pony Express Delivery!')
         await this.finish.click()
         await expect(this.page).toHaveURL(/.*checkout-complete/)
         await expect(this.text).toHaveText('THANK YOU FOR YOUR ORDER')
